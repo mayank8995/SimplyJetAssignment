@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box
+ }
+
+ body{
+     background:black;
+     font-family: 'Lato', sans-serif;
+     font-family: 'Poppins', sans-serif;
+     background-image: radial-gradient(#06067c, black);
+     background-image: radial-gradient(#06067c, black);
+    background-repeat: no-repeat;
+    height: 100vh;
+ }
+  .links-container{
+    display: none;
+}
+.container {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  .nav-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px;
+  }
+  .nav-header h1{
+      color:#fff
+  }
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column ;
+  }
+  div h1:first-child{
+      color:#fff;
+      margin:0
+  }
+  div h1:nth-child(2){
+    color: #A5D9FF;
+    text-align: center;
+    margin:0
+  }
+  p{
+      color: #B0B0B0;
+      margin-top: 0;
+  }
+  .try{
+    color: #fff;
+    background-color: #2104D8;
+    width: 189px;
+    height: 58px;
+    border: none;
+    border-radius: 5px;
+  }
+  img {
+   width: 100%;
+   height: auto
+}
+.content{
+    padding: 50px 0px 0px 0px
+}
+.navigate{
+    padding: 20px;
+}
+button{
+    cursor: pointer;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+ @media only screen and (min-width: 768px){
+    .nav-header{
+        display: none;
+    }
+    .links-container{
+        display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+    
+    }
+    ul li{
+        list-style-type: none;
+        display: inline;
+        margin: 50px;
+        cursor: pointer;
+    }
+    button[type="button"]{
+        color: #fff;
+        background-color: #242424;
+        width: 165px;
+        height: 50px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    li>a{
+        color: white
+    }
+    a:link {
+        text-decoration: none;
+      }
+      .image-block{
+        margin-left: 10%;
+    margin-right: 10%;
+    }
+ }
